@@ -22,7 +22,7 @@ public class DynamicWebtable {
 	
 			System.out.println(ls.get(i).getText());
 		}
-		
+		//*********************************************************
 		List<WebElement>li=driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr"));
 		System.out.println(li.size());
 		for(int j=0;j<li.size();j++)
