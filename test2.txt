@@ -1,0 +1,83 @@
+selenium version
+monkey testing,gorilla testing
+perfomace testing architecture and types
+quality assurnace/control/analyst
+bigbang testing(non integarton testuog)
+authorization token and junit,testng,selenium 4 features
+selenium2 vs selenium3
+index,view in sql
+sql vs nosql
+find broken links in a website
+Write Code to fetch values From Excel whose Rows are dynamically Changing?
+post vs patch and 300 series status code 
+The HTTP 300 Multiple Choices redirect status response code indicates
+ that the request has more than one possible responses
+
+Write Code to fetch values from Database for any given Given Query?
+deferred,not reproducible example
+
+Patch is used for small updations like if we have name,id,number we need to update name we use patch
+when we need to update id,name we use put
+how to locate table in selenium
+can you explain the framework which you have used in your selenium project==
+We need to specify in and out of our Test Automation Framework such as programming language used,
+ Type of framework used, Test Base Class (Initializing WebDriver, Implicit Waits),
+ How we separate Element locators and tests (Page Objects, Page Factory), 
+Utility functions file, Property files, TestNG annotations, How we parameterize tests using Excel files, 
+How we capture error screenshots, Generating reports(Extent Reports),
+ Emailing reports, 
+Version Control System used and Continues Integration Tool used
+delete-once we delete data from db we can retreive it but in truncate it is not possible .
+Exploratory testing vs adhoc
+where you used abstraction and encapsulation in automation
+role of scrum master and product owner
+
+OOPs-
+OOP stands for Object-Oriented Programming.
+
+Procedural programming is about writing procedures or methods that perform operations on the data,
+while object-oriented programming is about creating objects that contain both data and methods.
+
+Object-oriented programming has several advantages over procedural programming:
+
+OOP is faster and easier to execute
+OOP provides a clear structure for the programs
+OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+OOP makes it possible to create full reusable applications with less code and shorter development time
+
+
+Tdd vs Bdd-
+how you use equivalence and boundary value in project==
+test plan vs test strategy
+test metrics
+pageobjectmodel
+challenges faced in manual/automation testing
+
+
+entry criteria-the precondition must be achieved before starting testing process
+testplan-
+planning-requirement documents
+testdesign-
+requirment document,test plan
+test environment-
+testplan,smoke test,test data
+test execution-
+testplan,testcase,testdata,testenvironment
+test closure-
+test execution report,defect report
+exit criteria-the condition must be met before testing coming to end
+testplan-
+test strategy,test estimation,test plan
+test design-
+test case,test script,test data
+test environment-
+smoke test results
+test execution-
+testcase execution report,defect report,rtm
+test closure-
+testclosure report,test metrics
+
+
+test metrics are used to estimate the progress,productivity,quality of a software testing process.
+to improve efficiency of testing porcess,to help make better decisions for further testing process and providing data to the testing process
+test metrics are used to take decision for next phase of activities,understand improvement required 
