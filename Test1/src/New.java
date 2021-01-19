@@ -127,7 +127,7 @@ public class New {
 	    driver.findElement(By.partialLinkText("Profile visi")).click();*/
 	    
 	    //invite users
-	    Thread.sleep(30000);
+	    /*Thread.sleep(30000);
 	    driver.findElement(By.xpath("//p[contains(text(),'Invite / Remove users')]")).click();
 		driver.findElement(By.xpath("//button[contains(text(),'Invite users')]")).click();
 		driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/button[1]")).click();
@@ -147,13 +147,86 @@ public class New {
 		Thread.sleep(10000);
 		//driver.findElement(By.xpath("//button[contains(text(),'Yes, Remove')]")).click();
 	    //not to remove user
-		driver.findElement(By.xpath("//button[@id='close_remove_user_popup']")).click();
+		driver.findElement(By.xpath("//button[@id='close_remove_user_popup']")).click();*/
 		
 		//view community profile
-		Thread.sleep(30000);
+		/*Thread.sleep(30000);
 		driver.findElement(By.xpath("//p[contains(text(),'View community profile')]")).click();
-		driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[3]")).click();
-		
+		Thread.sleep(10000);
+		driver.findElement(By.xpath("//p[contains(text(),'Community settings')]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//profanity admin
+		driver.findElement(By.xpath("//p[contains(text(),'Profanity admin')]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//view community feedback
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[3]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//sub community
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[4]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//people directory
+		driver.findElement(By.xpath("//p[contains(text(),'People directory')]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//community requests
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[6]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//invite/remove users
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[7]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//career opportunities
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[8]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//question&advice
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[9]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//events and webinars
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[10]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//fundraising initiatives
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[11]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();
+		//Business services
+		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/a[12]/div[1]/p[1]")).click();
+		Thread.sleep(10000);
+		driver.navigate().back();*/
+	    
+	    
+	    //manage invitations
+	  /*  Thread.sleep(30000);
+	    driver.findElement(By.xpath("//p[contains(text(),'Manage invitations')]")).click();
+	    Thread.sleep(10000);
+	   //* driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[3]/button[1]/a[1]")).click();
+		driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/input[1]")).sendKeys("seenu");
+		driver.findElement(By.xpath("//select[@id='inputAffiliatedTags']")).click();
+		driver.findElement(By.xpath("//option[contains(text(),'Member')]")).click();
+		driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[3]/input[1]")).sendKeys("polepallisrinivas44@gmail.com");
+		driver.findElement(By.xpath("//textarea[@id='formControlTextarea']")).sendKeys("sbhdhskfbhd");
+		driver.findElement(By.xpath("//button[contains(text(),'Send invite')]")).click();
+		driver.navigate().back();*/
+	   /* driver.findElement(By.xpath("//button[contains(text(),'Invitation sent')]")).click();
+	    Thread.sleep(10000);
+	    driver.findElement(By.xpath("//button[contains(text(),'Nominations')]")).click();
+	    Thread.sleep(10000);
+	    driver.findElement(By.xpath("//button[contains(text(),'Approved Nominations')]")).click();
+	    Thread.sleep(10000);
+	    driver.findElement(By.xpath("//button[contains(text(),'Rejected Nominations')]")).click();*/
+	    
+		//profile page
+	    Thread.sleep(30000);
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[6]/a[1]/div[1]/img[1]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[6]/div[1]/a[1]")).click();
+	    driver.findElement(By.xpath("//button[@id='']")).click();
 		
 	    
 	    //logout

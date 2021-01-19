@@ -19,10 +19,8 @@ public class DynamicWebtable {
 		System.out.println(ls.size());
 		for(int i=0;i<ls.size();i++)
 		{
-	
-			System.out.println(ls.get(i).getText());
+		System.out.println(ls.get(i).getText());
 		}
-		//Adding Comments
 		List<WebElement>li=driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr"));
 		System.out.println(li.size());
 		for(int j=0;j<li.size();j++)
