@@ -81,3 +81,53 @@ testclosure report,test metrics
 test metrics are used to estimate the progress,productivity,quality of a software testing process.
 to improve efficiency of testing porcess,to help make better decisions for further testing process and providing data to the testing process
 test metrics are used to take decision for next phase of activities,understand improvement required 
+process metrics-used to in process of test execution and test preparation phase of stlc
+product metrics used in the process of defect anaysis phase in stlc
+
+High severity and low priority:
+there is a about us link in home page if we click it becomes blank
+
+High Priority & Low Severity:
+A minor issue that imposes some loss of functionality, but for which there is an acceptable & easily reproducible workaround. Testing can proceed without interruption but it affects customers reputation.
+
+For example,
+1. Spelling mistake of a company name on the homepage
+2. Company logo or tagline issues
+ 
+It is important to fix the issue as soon as possible, although it may not cause a lot of damage.
+
+Low Priority & Low Severity:
+For example,
+1. FAQ page takes a long time to load.
+2. Font family or font size or color or spelling issue in the application or reports (Spelling mistake of company name on the home page won’t come under this Low Priority and Low
+Severity)
+
+28700
+23800
+driver.get("www.google.com");
+String url=driver.getCurrenturl();
+driver.quit();
+Syso(url);
+stale element found exception-element no longer found
+to modify table name use alter command
+
+types of tests in postman
+for multiple users how to check in postman
+hoe to change text,color in automation
+ui-look and feel
+ux-user interaction on webpage
+preequest while doing api testing-
+url,body,method.
+when there is a change reuest what will u do first in testing
+running failed test cases in testng using iretryanalyzer
+
+
+https://www.youtube.com/watch?v=aNoJm8ECoo0&list=PLsjUcU8CQXGErA7pq8DGBSNiKdr-cKpdg&index=48
+https://www.guru99.com/change-control-business-analyst.html
+https://www.tutorialspoint.com/how-to-verify-the-color-and-background-color-of-a-web-element-in-selenium
+
+Syso(10+20+"java")-30java
+syso("java"+10+20)-java1020
+
+interface-webdriver,WebElement
+poly-method overloading-implicit wait function name with different parameters-min,sec,hours
