@@ -6,8 +6,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class New {
 
@@ -24,6 +28,7 @@ public class New {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://dev.networked.co/");
+		
 		
 			
 	/*FileInputStream file=new FileInputStream("C:\\Users\\Seenu\\OneDrive\\Desktop\\Book2.xlsx");
@@ -223,17 +228,84 @@ public class New {
 	    driver.findElement(By.xpath("//button[contains(text(),'Rejected Nominations')]")).click();*/
 	    
 		//profile page
+	    /*Thread.sleep(30000);
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/a[1]/div[1]/img[1]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/div[1]/a[1]")).click();*/
+	    //about
+	   /* driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")).click();
+	    driver.findElement(By.xpath("//textarea[@id='aboutUser']")).sendKeys("Testpage");
+	    driver.findElement(By.xpath("//*[@id=\"mainContainer\"]/div/div[2]/div/div/div[2]/div/div[2]/div/form/div[2]/button[2]")).click();
+	    //expertise
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]")).click();
+	    driver.findElement(By.xpath("//a[@id='profile_expertise-item-1']")).click();
+	    driver.findElement(By.xpath("//*[@id=\"mainContainer\"]/div/div[2]/div/div/div[3]/div/div[3]/button[2]")).click();*/
+	    //interests
+	   /* driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]")).click();
+	    driver.findElement(By.xpath("//label[contains(text(),'Mentorship and Knowledge Exchange')]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/div[1]/div[1]/div[1]")).click();*/
+	    
+	    //experience
+	    /*driver.findElement(By.xpath("//button[@data-target='#editExperienceModal']")).click();
+	    driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]")).sendKeys("Software Engineer");
+	    WebElement w=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/select[1]"));
+	    Select s=new Select(w);
+	    s.selectByValue("fulltime");
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[1]/div[1]/input[1]")).sendKeys("ABB");
+	    driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[4]/input[1]")).sendKeys("Bangalore");
+	    WebElement w1=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[5]/div[1]/select[1]"));
+	    Select s1=new Select(w1);
+	    s1.selectByValue("January");
+	    WebElement w2=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[5]/div[1]/select[2]"));
+	    Select s2=new Select(w2);
+	    s2.selectByValue("2020");
+	    WebElement w3=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[6]/div[1]/select[1]"));
+	    Select s3=new Select(w3);
+	    s3.selectByVisibleText("June");
+	    WebElement w4=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[6]/div[1]/select[2]"));
+	    Select s4=new Select(w4);
+	    s4.selectByValue("2020");
+	    driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[7]/textarea[1]")).sendKeys("hjdfysa");
+	    driver.findElement(By.xpath("//button[@id='saveBtnExperience']")).click();
+	    //Education
+	    driver.findElement(By.xpath("//*[@id=\"mainContainer\"]/div/div[2]/div/div/div[6]/div/div[1]/button")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("chaitanya");
+	    driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/input[1]")).sendKeys("BE");
+	    driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/input[1]")).sendKeys("CSE");
+	    driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[4]/input[1]")).sendKeys("Bangalore");
+	    WebElement w5=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[5]/div[1]/select[1]"));
+	    Select s5=new Select(w5);
+	    s5.selectByValue("January");
+	    WebElement w6=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[5]/div[1]/select[2]"));
+	    Select s6=new Select(w6);
+	    s6.selectByValue("2021");
+	    WebElement w7=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[6]/div[1]/select[1]"));
+	    Select s7=new Select(w7);
+	    s7.selectByVisibleText("June");
+	    WebElement w8=driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[6]/div[1]/select[2]"));
+	    Select s8=new Select(w8);
+	    s8.selectByValue("2021");
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[7]/textarea[1]")).sendKeys("dbhd");
+	    driver.findElement(By.xpath("//button[@id='saveBtnEducation']")).click();*/
+	    
+	    //settings page
 	    Thread.sleep(30000);
-	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[6]/a[1]/div[1]/img[1]")).click();
-	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[6]/div[1]/a[1]")).click();
-	    driver.findElement(By.xpath("//button[@id='']")).click();
-		
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/a[1]/div[1]/img[1]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/div[1]/a[2]")).click();
+	    driver.findElement(By.xpath("//label[contains(text(),'Career Notifications')]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/label[1]/div[1]/span[1]")).click();
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/label[1]/div[1]/span[1]")).click();
+	    driver.findElement(By.xpath("//button[contains(text(),'Save Settings')]")).click();
+	    
+	    
+	    
+	    
 	    
 	    //logout
 	     Thread.sleep(30000);
 		
-			driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[6]/a[1]/div[1]/img[1]")).click();
-			driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[6]/div[1]/a[5]")).click();
+			driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/a[1]/div[1]/img[1]")).click();
+			driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/div[1]/a[5]")).click();
 			driver.close();
 
 	}

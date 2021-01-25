@@ -24,6 +24,7 @@ public class Keyboard {
 	{
 		
 		String a=elem.get(i).getAttribute("href");
+		//to see noof links in a webpage
 		//System.out.println(a);
 		if((a!=null) && !(a.contains("https://www.google.com/")))
 		{
