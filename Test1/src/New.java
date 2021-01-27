@@ -159,6 +159,13 @@ public class New {
 		driver.findElement(By.xpath("//p[contains(text(),'View community profile')]")).click();
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//p[contains(text(),'Community settings')]")).click();
+		//tags
+		 driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/section[1]/article[1]/section[1]/div[2]/div[1]/div[1]/div[1]/div[8]/label[1]/span[1]")).click();
+		 driver.findElement(By.xpath("//button[contains(text(),'Save Changes')]")).click();
+		 //classifications
+		 driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/section[3]/article[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[14]/label[1]/span[1]")).click();
+		 driver.findElement(By.xpath("//button[contains(text(),'Save classifications')]")).click();
+		 
 		Thread.sleep(10000);
 		driver.navigate().back();
 		//profanity admin
@@ -228,9 +235,9 @@ public class New {
 	    driver.findElement(By.xpath("//button[contains(text(),'Rejected Nominations')]")).click();*/
 	    
 		//profile page
-	    /*Thread.sleep(30000);
+	    Thread.sleep(30000);
 	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/a[1]/div[1]/img[1]")).click();
-	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/div[1]/a[1]")).click();*/
+	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/div[1]/a[1]")).click();
 	    //about
 	   /* driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")).click();
 	    driver.findElement(By.xpath("//textarea[@id='aboutUser']")).sendKeys("Testpage");
@@ -289,13 +296,13 @@ public class New {
 	    driver.findElement(By.xpath("//button[@id='saveBtnEducation']")).click();*/
 	    
 	    //settings page
-	    Thread.sleep(30000);
+	    /*Thread.sleep(30000);
 	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/a[1]/div[1]/img[1]")).click();
 	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/nav[1]/div[1]/div[3]/ul[1]/li[5]/div[1]/a[2]")).click();
 	    driver.findElement(By.xpath("//label[contains(text(),'Career Notifications')]")).click();
 	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/label[1]/div[1]/span[1]")).click();
 	    driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/label[1]/div[1]/span[1]")).click();
-	    driver.findElement(By.xpath("//button[contains(text(),'Save Settings')]")).click();
+	    driver.findElement(By.xpath("//button[contains(text(),'Save Settings')]")).click();*/
 	    
 	    
 	    
